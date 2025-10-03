@@ -1,32 +1,32 @@
 {
   "required_api_version": "^2.0.0",
-  "name": "Demo",
-  "description": "Demo extension",
-  "developer_name": "Aleksandr Gornostal",
+  "name": "HTTPS Troubleshooter",
+  "description": "Troubleshoot HTTPS request issues - connection, timeout, proxy, etc.",
+  "developer_name": "Oleksandr Gornostal",
   "icon": "images/icon.png",
   "options": {
     "query_debounce": 0.05
   },
   "preferences": [
     {
-      "id": "demo_kw",
+      "id": "https_kw",
       "type": "keyword",
-      "name": "Demo",
-      "default_value": "dm"
+      "name": "HTTPS Troubleshooter",
+      "default_value": "https"
     },
     {
-      "id": "item_name",
+      "id": "test_url",
       "type": "input",
-      "name": "Item name",
-      "description": "Name for each item",
-      "default_value": "Item"
+      "name": "Test URL",
+      "description": "URL to test HTTPS connection",
+      "default_value": "https://www.google.com"
     },
     {
-      "id": "memo",
-      "type": "text",
-      "name": "Memo",
-      "description": "Write something here",
-      "default_value": ""
+      "id": "timeout_seconds",
+      "type": "input",
+      "name": "Timeout (seconds)",
+      "description": "Connection timeout in seconds",
+      "default_value": "10"
     }
   ]
 }
